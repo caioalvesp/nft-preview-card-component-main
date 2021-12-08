@@ -1,0 +1,106 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+  --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /*FONT*/
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--very-dark-blue-mainbg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 300px;
+  background-color: var(--very-dark-blue-cardbg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.card-description {
+  color: var(--soft-blue);
+  line-height: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.price-value {
+  display: flex;
+}
+
+.price-value img {
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+
+.price {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.price-countdown {
+  display: flex;
+}
+
+.price-countdown img {
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+
+.countdown {
+  color: var(--soft-blue);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--very-dark-blue-line);
+  padding-top: 1rem;
+}
+
+.footer-img {
+  height: 2rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.footer-credits {
+  color: var(--soft-blue);
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.footer-credits span {
+  color: var(--white);
+}
